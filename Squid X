@@ -1,7 +1,7 @@
 local humanoidRootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
 local lastPosition = humanoidRootPart.Position
 
-while wait(2) do
+while wait(4) do
 if game.PlaceId == 7554888362 then
 firetouchinterest(workspace.Map.Register.RegisterRegion.Part, humanoidRootPart, 0)
 end
