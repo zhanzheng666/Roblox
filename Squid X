@@ -3,14 +3,13 @@ repeat task.wait() until game:IsLoaded()
 local humanoidRootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
 local lastPosition = humanoidRootPart.Position
 
-while wait(2) do
 if game.PlaceId == 7554888362 then
 firetouchinterest(workspace.Map.Register.RegisterRegion.Part, humanoidRootPart, 0)
 end
 
 if game.PlaceId == 7559074529 then
 game:GetService("RunService").Heartbeat:Connect(function()
-    if (humanoidRootPart.Position - lastPosition).Magnitude > 5 then
+    if (humanoidRootPart.Position - lastPosition).Magnitude > 50 then
          wait(25)
         firetouchinterest(workspace.Map.RedLightGreenLight.Reward, humanoidRootPart, 0)
         task.wait()
@@ -18,5 +17,4 @@ game:GetService("RunService").Heartbeat:Connect(function()
         lastPosition = humanoidRootPart.Position
     end
 end)
-end
 end
