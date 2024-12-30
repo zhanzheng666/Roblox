@@ -10,4 +10,4 @@ if not getgenv().AlreadyExecutedScript then
     queue_on_teleport(teleportScript)
 end
 
-loadstring(game:HttpGet("https://example.com/MainScript.html"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zhanzheng666/Roblox/refs/heads/main/Squid%20X"))()
