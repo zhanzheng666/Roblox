@@ -1,20 +1,14 @@
 repeat task.wait() until game:IsLoaded()
 
 local humanoidRootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-local lastPosition = humanoidRootPart.Position
 
 if game.PlaceId == 7554888362 then
 firetouchinterest(workspace.Map.Register.RegisterRegion.Part, humanoidRootPart, 0)
 end
 
 if game.PlaceId == 7559074529 then
-game:GetService("RunService").Heartbeat:Connect(function()
-    if (humanoidRootPart.Position - lastPosition).Magnitude > 50 then
-         wait(25)
-        firetouchinterest(workspace.Map.RedLightGreenLight.Reward, humanoidRootPart, 0)
+         wait(90)
+humanoidRootPart.CFrame = CFrame.new(1365, 270, -97)
         task.wait()
  game:GetService("ReplicatedStorage").Remotes.RequestTeleportAsync:FireServer()
-        lastPosition = humanoidRootPart.Position
-    end
-end)
 end
