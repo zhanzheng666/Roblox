@@ -5,7 +5,7 @@ firetouchinterest(workspace.Map.Register.RegisterRegion.Part, game.Players.Local
 end
 
 if game.PlaceId == 7559074529 then
-         wait(90)
+         wait(85)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1365, 270, -97)
         task.wait()
  game:GetService("ReplicatedStorage").Remotes.RequestTeleportAsync:FireServer()
